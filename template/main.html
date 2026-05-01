@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="insert-image">
+            <div class="floatUpDown size-normalizer" style="height: 100%;" id="media-img-container">
+                <img id="media-img" src="media.png" style="object-fit: contain;"></img>
+            </div>
+        </div>
+
+        <div class="usb-image" id="usb-image">
+            <div class="size-normalizer" style="height: 100%;">
+                <img src="usb.png" style="object-fit: contain; transform: scale(0.47) translate(0, 60vh);"></img>
+            </div>
+        </div>
+
+        <div class="splash-text" id="splash-text">
+            Insert game or music media
+        </div>
+
+        <div class="overlay size-normalizer" id="overlay" style="display: none;">
+            <video id="videoplayer" class="videoplayer" autoplay loop></video>
+        </div>
+    </div>
+
+    <script src="loader.js"></script>
+</body>
+</html>

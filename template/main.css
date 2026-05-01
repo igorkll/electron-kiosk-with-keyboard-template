@@ -1,0 +1,117 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    cursor: none;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+
+    color: white;
+    font-size: 7vh;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+.main-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+
+    padding: 20px;
+    gap: 20px;
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(1vh);
+    }
+    100% {
+        transform: translateY(-1vh);
+    }
+}
+
+@keyframes rotationAnimation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.insert-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 50vh;
+    height: 50vh;
+}
+
+.floatUpDown {
+    animation: floatUpDown 1.2s ease-in-out infinite alternate;
+}
+
+.rotationAnimation {
+    animation: rotationAnimation 0.7667s linear infinite;
+    transform-origin: center;
+}
+
+.usb-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 50vh;
+    height: 50vh;
+}
+
+.size-normalizer {
+    position: relative;
+}
+
+.size-normalizer > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.splash-text {
+    text-align: center;
+}
+
+.videoplayer {
+    background-color: black;
+}
