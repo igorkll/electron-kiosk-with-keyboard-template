@@ -10,3 +10,7 @@ disables all electron hotkeys. allows you to give access to the keyboard to unau
 * ctrl+W
 * ctrl+Q
 * ctrl+M
+
+## main_with_webview_support.js
+alternative main.js with webview tag support  
+disables hotkeys in the same way inside the webview tag  
